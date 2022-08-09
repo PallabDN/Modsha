@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="appbar">30sp</dimen>
+    <dimen name="recycleTopRadius">20dp</dimen>
+    <dimen name="recyclePadding">20dp</dimen>
+    <dimen name="recycleTopMargin">190dp</dimen> <!-- 130dp-->
+    <dimen name="productCorner">15dp</dimen>
+    <dimen name="productStroke">2dp</dimen>
+
+    <dimen name="floatingButtonMargin">30dp</dimen>
+
+    <dimen name="productImageRecycleHeight">200dp</dimen>
+    <dimen name="productImageRecycleWidth">140dp</dimen>
+    <dimen name="productLayoutRecycleWidth">160dp</dimen>
+
+    <dimen name="productSinglePadding">10dp</dimen>
+    <dimen name="productTittleSize">18sp</dimen>
+
+
+
+    <dimen name="marginTittleTop">3dp</dimen>
+
+    <dimen name="textSizeProductPrice">11sp</dimen>
+    <dimen name="textSizeProductPriceDiscount">15sp</dimen>
+    <dimen name="textProductRightPadding">5dp</dimen>
+    <dimen name="textPaddingLeftRight">3dp</dimen>
+    <dimen name="widthLine">1dp</dimen>
+
+    <dimen name="user_name">30sp</dimen>
+    <dimen name="user_mobile">25sp</dimen>
+    <dimen name="user_mobile_marginTop">10dp</dimen>
+    <dimen name="user_layout_padding">10dp</dimen>
+    <dimen name="user_layout_height">200dp</dimen>
+    <dimen name="user_order_history_marginTop1">30dp</dimen>
+    <dimen name="user_cardView_margin">20dp</dimen>
+    <dimen name="user_orderHistory_text">20sp</dimen>
+    <dimen name="user_cardView_padding">20dp</dimen>
+    <dimen name="user_card_corner_radius">5dp</dimen>
+    <dimen name="user_card_stroke_width">1dp</dimen>
+    <dimen name="user_image">30dp</dimen>
+    <dimen name="user_image_layout_marginTop">15dp</dimen>
+    <dimen name="user_image_rightMargin">50dp</dimen>
+
+    <dimen name="user_submit_button">20sp</dimen>
+
+    <dimen name="progress_bar">250dp</dimen>
+
+
+    <dimen name="recycle_marginTop">53dp</dimen>
+    <dimen name="layout_leftMargin">7dp</dimen>
+    <dimen name="tittleSize">24sp</dimen>
+
+
+
+</resources>

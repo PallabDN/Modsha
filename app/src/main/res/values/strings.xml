@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Modsha Buisness</string>
+    <string name="app">Modsha</string>
+    <string name="splash">Splash</string>
+    <string name="network">No Internet Connection</string>
+    <string name="appBarSearch">Search</string>
+    <string name="appBarAccount">Account</string>
+    <string name="productImage">productImage</string>
+    <string name="Name">Name is Here And</string>
+    <string name="product_image">product_image</string>
+    <string name="order_now">order now</string>
+    <string name="order_more">order more</string>
+    <string name="number_of_products">Product Quantity :</string>
+    <string name="size">Size :</string>
+    <string name="name">Name</string>
+    <string name="_2638162631">2638162631</string>
+    <string name="go_to_cart">Go To Cart</string>
+    <string name="order_history">Order History</string>
+    <string name="user_input_name">Name</string>
+    <string name="user_input_mobile">Phone Number</string>
+    <string name="user_input_email">Email (Optional)</string>
+    <string name="user_next">Next</string>
+    <string name="user_submit">Submit</string>
+    <string name="user_input_otp">OTP</string>
+    <string name="medicine">Medicine</string>
+
+
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="location">Location</string>
+    <string name="sign_up">SignUp</string>
+    <string name="log_in">LogIn</string>
+    <string name="have_not_account">Have not account!</string>
+    <string name="whishlist">Whishlist</string>
+    <string name="star_item">Whishlist</string>
+    <string name="backgroundimage">backgroundImage</string>
+    <string name="empty_cart_image">EmptyCartImage</string>
+    <string name="remove">remove</string>
+    <string name="back">back</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="cann_t_be_delivered_to_this_location">cann\'t be delivered to this location</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="cart">Cart</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="confirm_order">Confirm order</string>
+    <string name="address">Address</string>
+    <string name="logout">LogOut</string>
+    <string name="History">History</string>
+    <string name="Cart">Cart</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="trending_products">Trending Products</string>
+    <string name="related_products">Related Products</string>
+</resources>
+
+
+
+

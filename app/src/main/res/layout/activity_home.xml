@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/home_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeActivity"
+
+    >
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/home_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/home_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.appbar"
+            app:menu="@menu/app_bar"
+            app:navigationIcon="@drawable/navigation_icon"
+            />
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_gravity="center"
+
+                    >
+                    <ImageView
+                        android:layout_margin="6dp"
+                        android:id="@+id/buy_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ecommerce"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/productImage" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Products"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/font"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_gravity="center"
+
+                    >
+                    <ImageView
+                        android:layout_margin="6dp"
+                        android:id="@+id/buy_medicine"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/medicine"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/productImage" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medicine"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/font"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+-->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/recycle_background">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/slider_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorEnabled="true"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1" />
+                <LinearLayout
+                    android:id="@+id/trending"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trending_products"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/font"
+                        />
+                    <View
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimaryTransparent"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/trending_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    />
+                <View
+                    android:id="@+id/other_divider"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryTransparent"
+                     />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_product"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/recyclePadding"
+                    />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cart_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/floatingButtonMargin"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextAppearance="@style/RobotoTextViewStyle"
+        app:headerLayout="@layout/navigation_header"
+        app:itemTextColor="@color/colorPrimary"
+        android:layout_gravity="start"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+

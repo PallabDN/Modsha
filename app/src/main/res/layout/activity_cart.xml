@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/cart_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/layout_leftMargin"
+        android:layout_marginStart="@dimen/layout_leftMargin">
+        <ImageView
+            android:id="@+id/cart_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:contentDescription="@string/back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tittleSize"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/font"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_product_user_cart"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/recycle_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/recycle_background"
+        android:padding="@dimen/recyclePadding"
+        />
+    <LinearLayout
+        android:id="@+id/user_cart_bottom"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            >
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/total_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="30sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/font"
+                />
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/user_place_order"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Place Order"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/font"
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/user_empty_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/cart"
+        android:padding="70dp"
+        android:contentDescription="@string/empty_cart_image"
+        android:visibility="gone"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

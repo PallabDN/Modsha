@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/order_history_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OrderHistoryActivity"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/layout_leftMargin"
+        android:layout_marginStart="@dimen/layout_leftMargin">
+        <ImageView
+            android:id="@+id/history_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:contentDescription="@string/back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_history"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tittleSize"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/font"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_product_user_order_history"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/recycle_marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/recycle_background"
+        android:padding="@dimen/recyclePadding"
+        />
+    <ImageView
+        android:id="@+id/empty_order_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/history"
+        android:padding="100dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

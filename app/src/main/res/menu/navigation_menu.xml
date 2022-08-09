@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group_1">
+        <item
+            android:id="@+id/drawer_cart"
+            android:icon="@drawable/shopping_cart"
+            android:title="@string/Cart"/>
+        <item
+            android:id="@+id/drawer_star_item"
+            android:icon="@drawable/heart"
+            android:title="@string/star_item"/>
+        <item
+            android:id="@+id/drawer_history"
+            android:icon="@drawable/history_png"
+            android:title="@string/History"/>
+    </group>
+    <group
+        android:id="@+id/group_2">
+        <item
+            android:id="@+id/drawer_account"
+            android:icon="@drawable/user"
+            android:title="@string/appBarAccount"
+            />
+        <item
+            android:id="@+id/drawer_log_in"
+            android:icon="@drawable/log_in"
+            android:title="@string/log_in"
+            />
+
+        <item
+            android:id="@+id/drawer_log_out"
+            android:icon="@drawable/log_out"
+            android:title="@string/logout"/>
+    </group>
+    <group
+        android:id="@+id/group_3"
+        >
+        <item
+            android:id="@+id/help"
+            android:title="@string/help"
+            />
+        <item
+            android:id="@+id/about"
+            android:title="@string/about"/>
+    </group>
+
+</menu>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "25312176403",
+    "project_id": "modsha-buisness",
+    "storage_bucket": "modsha-buisness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25312176403:android:dda76c31e0fdc5bb4a12e6",
+        "android_client_info": {
+          "package_name": "com.example.modshabuisness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25312176403-rm4hfnv130qv4meooun4g7uvec2gi78l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.modshabuisness",
+            "certificate_hash": "9b6088e3b1407e076c284ad2bc6f24a97f08a105"
+          }
+        },
+        {
+          "client_id": "25312176403-86kifb80qvs4kc7tnbau1qohvc6etfa3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcY2u2htW6rM-t7ihl5bwzdOu8J8RAFPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25312176403-86kifb80qvs4kc7tnbau1qohvc6etfa3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
